@@ -2,9 +2,13 @@
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var movies = new List<string>() { "Black Panther", "Iron Man", "Hulk", "Dr Strange", "Spider Man" };
+
+            movies.OrderBy(x => x.Length).ToList().ForEach(Console.WriteLine); 
         }
+
+        
     }
 }
